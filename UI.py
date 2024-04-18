@@ -1,5 +1,4 @@
 import streamlit as st
-import time
 from main import download_image
 
 if 'button' not in st.session_state:
@@ -19,4 +18,4 @@ st.button('Start', on_click=click_button, type="primary")
 if st.session_state.button: 
     st.text("Start scrapping..........")
     download_image(image_name, width, height)
-    st.success("Success to college the image")
+    st.success("Success to collect images")
